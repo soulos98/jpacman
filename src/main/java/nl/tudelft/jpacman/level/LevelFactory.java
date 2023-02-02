@@ -28,7 +28,7 @@ public class LevelFactory {
     /**
      * The default value of a pellet.
      */
-    private static final int PELLET_VALUE = 10;
+    private static final int  PELLET_VALUE = 10;
 
     /**
      * The sprite store that provides sprites for units.
@@ -69,6 +69,8 @@ public class LevelFactory {
         this.pointCalculator = pointCalculator;
     }
 
+    // Newly added function just returns the value of ghostIndex okay per Dr. Businge
+    public final int getGhostIndex(){return ghostIndex;}
     /**
      * Creates a new level from the provided data.
      *
